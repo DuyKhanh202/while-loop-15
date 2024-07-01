@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+       <input type="text" placeholder="Number" id="num">
+       <button onclick="inKetQua()">Submit!</button>
+
+            <hr>
+       <h1>Cho phép người dùng nhập vào 1 số  tính giai thừa số đó</h1>
+       <div class="form-group mb-3">
+        <p>Nhập vào số</p>
+    <input id="nhapSo" class="form-control w-25 mb-2">
+    <button class="btn btn-danger" id="tinhGiaiThua">Submit</button>
+       </div>
+       <div class="alert alert-danger" id="result"></div>
+       <hr>
+       <h1>Bài 3:Cho phép người dùng nhập vào 1 số tính tổng từ 1 -> n (Số người dùng nhập)</h1>
+       <div class="alert alert-success">
+        ví dụ : người dùng nhập vào 7
+        <br>
+        Kết Quả =1 + 2 + 3 + 4 + 5 + 6 + 7
+       </div>
+       <input class="form-control w-25 mb-3" id="nhapSoVao">
+       <button class="btn btn-success" onclick="tinhTong()">Tính Tổng!!</button>
+       <div id="ketQua" class="alert alert-danger"></div>
+       <hr>
+       <h1>Ví dụ 4: Cho phép người dùng nhập vào 1 số tính tồng từ 1 -> n (Số người dùng nhập). Tính tổng các số chẵn</h1>
+       <div class="alert alert-primary">
+        Ví dụ ; Người dùng nhập vào số 10
+        <br>
+        Kết quả =2 + 4 + 6 + 8 + 10
+       </div>
+       <div class="form-group mb-3">
+        <p>Nhập vào số</p>
+    <input id="nhapSoChan" class="form-control w-25 mb-2">
+    <button class="btn btn-success" onclick="tinhSoChan()">Tính Tổng</button>
+       </div>
+       <div class="alert alert-danger" id="result4"></div>
+       <hr>
+       <h1>Bài 5: Cho phép người dùng nhập vào 1 số, cho biết số đó có phải là số nguyên tố hay
+        không</h1>
+        <div class="alert alert-info">
+        Ví dụ : người dùng nhập vào số 5
+        <br>
+        Kết Quả : 5 là số nguyên tố
+        </div>
+        <div class="form-group mb-3">
+        <p>Nhập vào số</p>
+        <input type="text" id="soNguyenTo">
+        <button class="btn btn-warning" onclick="tinhSoNguyenTo()">Tính Tổng</button>
+        </div>
+        <div class="alert alert-warning" id="result5"></div>
+    </div>
+            <!-- my Js --> 
+             <script src="./index.js"></script>
+        </script>
+    </body>
+</html>
